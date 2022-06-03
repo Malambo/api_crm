@@ -12,7 +12,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
             let respuesta
             if (cliente.id){
                 // Edita un cliente (para editar tiene que ser el método PUT y hay que pasarle un id)
-                const url = `http://localhost:3001/clientes/${cliente.id}`
+                const url = `${import.meta.env.VITE_API_URL}/${cliente.id}`
                 respuesta = await fetch(url, {
                     method: 'PUT',
                     body: JSON.stringify(values),
@@ -22,7 +22,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                 })
             } else {
                 // Crea un nuevo cliente
-                const url = 'http://localhost:3001/clientes'
+                const url = import.meta.env.VITE_API_URL
                 respuesta = await fetch(url, {
                     method: 'POST',
                     body: JSON.stringify(values),
