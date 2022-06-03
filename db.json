@@ -1,0 +1,42 @@
+{
+  "clientes": [
+    {
+      "nombre": "Claudio Uribe",
+      "empresa": "Bloxito",
+      "email": "bloxito@gmail.com",
+      "telefono": "2246 44 6870",
+      "notas": "Esta es la nota del primer registro de cliente que se trata de almacenar en db.json",
+      "id": 1
+    },
+    {
+      "nombre": "Martiarena",
+      "empresa": "Martiarena & Co.",
+      "email": "martiarena@martiarena.com",
+      "telefono": "011 4659 6604",
+      "notas": "",
+      "id": 2
+    },
+    {
+      "nombre": "Maite Uribe",
+      "empresa": "Annei Roblox Constructions",
+      "email": "maite@pandoli.com.ar",
+      "telefono": "221 426 6381",
+      "notas": "La nena Maite es la nena más linda, inteligente y buena que yo haya conocido jamás.",
+      "id": 3
+    },
+    {
+      "nombre": "Ian Stewart",
+      "empresa": "Scientific American",
+      "email": "ian@sciam.com",
+      "notas": "Ian Stewart es uno de los mejores divulgadores de matemáticas del mundo.",
+      "id": 5
+    },
+    {
+      "nombre": "Mario Bunge",
+      "empresa": "Philips S5X",
+      "email": "bungeMario@filosofia.org",
+      "notas": "Mario Bunge fue un filósofo de la ciencia.",
+      "id": 6
+    }
+  ]
+}
