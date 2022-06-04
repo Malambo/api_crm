@@ -13,6 +13,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
             if (cliente.id){
                 // Edita un cliente (para editar tiene que ser el método PUT y hay que pasarle un id)
                 const url = `${import.meta.env.VITE_API_URL}/${cliente.id}`
+                console.log('Formulario: ', url)
                 respuesta = await fetch(url, {
                     method: 'PUT',
                     body: JSON.stringify(values),
