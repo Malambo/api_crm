@@ -32,7 +32,9 @@ export default function Inicio() {
                 })
                 await respuesta.json()
                 
-                // Se podría actualizar la página volviendo a cargar los datos de la API, pero esto hace pedidos innecesarios a la base de datos. Mejor actualizar el state trayendo todos menos el que se acaba de borrar:
+                // Se podría actualizar la página volviendo a cargar los datos de la API,
+                // pero esto hace pedidos innecesarios a la base de datos. Mejor actualizar
+                // el state trayendo todos menos el que se acaba de borrar:
                 const arrayClientes = clientes.filter(client => client.id !== id)
                 setClientes(arrayClientes)
             } catch (error) {

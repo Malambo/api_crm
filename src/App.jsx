@@ -13,11 +13,11 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/* Agrupa las rutas en su interior. Dentro del componente Layout (master page) van los componentes internos (Inicio) */}
-        <Route path="/clientes" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Inicio />} />
-          <Route path="nuevo" element={<NuevoCliente />} />
-          <Route path="editar/:id" element={<EditarCliente />} />
-          <Route path=":id" element={<VerCliente />} />
+          <Route path="clientes/nuevo" element={<NuevoCliente />} />
+          <Route path="clientes/editar/:id" element={<EditarCliente />} />
+          <Route path="clientes/:id" element={<VerCliente />} />
         </Route>
       </Routes>
     </BrowserRouter>
