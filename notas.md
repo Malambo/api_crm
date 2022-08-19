@@ -466,4 +466,3 @@ que saca una alerta con el texto que se le pasa y devuelve `true` o `false` seg√
 * Para actualizar el state se puede usar `.filter(...)` sobre el array que contenga la lista de clientes.
 
 ## v185 - 186. Deployment de la API
-
