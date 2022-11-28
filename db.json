@@ -37,6 +37,14 @@
       "email": "bungeMario@filosofia.org",
       "notas": "Mario Bunge fue un filósofo de la ciencia.",
       "id": 6
+    },
+    {
+      "nombre": "Marcelo Capasos",
+      "empresa": "Heart products",
+      "email": "MarCapasos@gmail.com",
+      "telefono": "2215696874",
+      "notas": "El cliente tiene un corazón de oro.",
+      "id": 7
     }
   ]
 }

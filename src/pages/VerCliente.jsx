@@ -11,7 +11,6 @@ export default function VerCliente() {
     useEffect(() => {
 
         const obtenerClienteAPI = async () => {
-            console.log(import.meta.env.VITE_API_URL)
             try {
                 const url = `${import.meta.env.VITE_API_URL}/${id}`
                 const respuesta = await fetch(url)
@@ -20,21 +19,17 @@ export default function VerCliente() {
             } catch (error) {
                 console.log(error)
             }
-            
             setCargando(!cargando)
         }
-
         obtenerClienteAPI()
-
     }, [])
 
     return (
         cargando ? <Spinner /> :
             Object.keys(cliente).length === 0 ?
             <p className="text-6xl font-bold">No existe ese cliente</p> : (
-            <div>
                 <>
-                <h1 className="text-4xl font-black text-blue-900">
+                <h1 className="text-4xl font-black text-slate-700">
                     Ver cliente {cliente.id}
                 </h1>
 
@@ -68,7 +63,6 @@ export default function VerCliente() {
                     {cliente.notas}
                 </p>)}
                 </>
-            </div>
         )
     )
 }

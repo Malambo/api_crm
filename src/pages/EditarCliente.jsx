@@ -10,7 +10,6 @@ export default function EditarCliente() {
     useEffect(() => {
 
         const obtenerClienteAPI = async () => {
-
             try {
                 const url = `${import.meta.env.VITE_API_URL}/${id}`
                 const respuesta = await fetch(url)
@@ -20,14 +19,12 @@ export default function EditarCliente() {
                 console.log(error)
             }
         }
-
         obtenerClienteAPI()
-
     }, [])
 
     return (
         <>
-        <h1 className="text-4xl font-black text-blue-900">
+        <h1 className="text-4xl font-black text-slate-900">
             Editar clientes
         </h1>
 

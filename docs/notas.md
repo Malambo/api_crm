@@ -1,5 +1,9 @@
 # crmReact
 
+Arranca con:
+crm-react> json-server --watch db.json --port 3001
+crm-react> npm run dev
+
 ## v151. crmReact completo
 
 * El proyecto incluye
@@ -266,7 +270,7 @@ A la constante *nuevoClienteSchema* hay que asociarla a los valores del formular
 * API: Application Programming Interface
 * API: Interfaz de programación de aplicaciones
 * Debe responder a los Request HTTP: GET, POST, PUT, PATCH, DELETE
-* Es una forma ordenada y estructurada de poner a disponsición los recursos
+* Es una forma ordenada y estructurada de poner a disposición los recursos
 * Es una forma de comunicación entre dos o más aplicaciones
 * **HTTP:**
   * GET: Obtener datos

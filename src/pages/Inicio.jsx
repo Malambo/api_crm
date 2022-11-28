@@ -2,6 +2,7 @@
 import {useState, useEffect} from "react"
 import Cliente from "../components/Cliente"
 
+
 export default function Inicio() {
     
     const [clientes, setClientes] = useState([])
@@ -45,13 +46,13 @@ export default function Inicio() {
 
     return (
         <>
-        <h1 className="text-4xl font-black text-blue-900">
+        <h1 className="text-4xl font-black text-slate-900">
             Clientes
         </h1>
-        <p className='mt-3 text-gray-600'>Administra tus clientes</p>
+        <p className='mt-3 text-slate-600'>Administra tus clientes</p>
 
         <table className="w-full mt-5 bg-white shadow table-auto">
-            <thead className="text-white bg-blue-800">
+            <thead className="text-white bg-slate-800">
                 <tr>
                     <th className="p-2">Id</th>
                     <th className="p-2">Nombre</th>

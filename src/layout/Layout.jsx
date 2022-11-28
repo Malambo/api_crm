@@ -6,16 +6,16 @@ export default function Layout() {
 
     return (
         <div className="md:flex md:min-h-screen">
-            <div className="px-5 py-10 bg-blue-900 md:w-1/4">
+            <div className="px-5 py-10 bg-slate-800 md:w-1/4">
                 <h2 className="text-4xl font-black text-center text-white">crmClientes</h2>
                 <nav className="mt-10">
                     <Link
-                        className={`${urlActual === '/' ? 'text-blue-300' : ' text-white'} block text-2xl mt-2 hover:text-blue-100`}
+                        className={`${urlActual === '/' ? 'text-slate-300' : ' text-white'} block text-2xl mt-2 hover:text-slate-100`}
                         to="/">
                             Clientes
                     </Link>
                     <Link
-                        className={`${urlActual === '/clientes/nuevo' ? 'text-blue-300' : ' text-white'} block text-2xl mt-2 hover:text-blue-100`}
+                        className={`${urlActual === '/clientes/nuevo' ? 'text-slate-300' : ' text-white'} block text-2xl mt-2 hover:text-slate-100`}
                         to="/clientes/nuevo">
                             Nuevo cliente
                     </Link>

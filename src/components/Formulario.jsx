@@ -4,9 +4,7 @@ import {useNavigate} from 'react-router-dom'
 import Alerta from './Alerta'
 
 export default function Formulario({titulo, textoBoton, cliente={}}) {
-
     const navigate = useNavigate()
-
     const handleSubmit = async (values) => {
         try {
             let respuesta
@@ -32,10 +30,8 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                     }
                 })
             }
-            
             await respuesta.json()
-            navigate('/clientes')
-            
+            navigate('/')
         } catch (error) {
             console.log(error)
         }
@@ -58,7 +54,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
 
     return (
         <div className="px-5 py-10 mx-auto mt-10 bg-white rounded-md shadow-md md:w-3/4">
-            <h1 className="text-xl font-bold text-center text-gray-600 uppercase ">
+            <h1 className="text-xl font-bold text-center uppercase text-slate-600 ">
                 {titulo}
             </h1>
 
@@ -78,7 +74,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                 >
                     <div className="mb-4">
                         <label
-                            className="text-gray-600"
+                            className="text-slate-600"
                             htmlFor='nombre'
                         >
                             Nombre:
@@ -86,7 +82,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                         <Field
                             id='nombre'
                             type="text"
-                            className="block w-full p-3 mt-2 bg-gray-50"
+                            className="block w-full p-3 mt-2 bg-slate-50"
                             placeholder="Nombre del cliente"
                             name="nombre"
                         />
@@ -97,7 +93,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                     </div>
                     <div className="mb-4">
                         <label
-                            className="text-gray-600"
+                            className="text-slate-600"
                             htmlFor='empresa'
                         >
                             Empresa:
@@ -105,7 +101,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                         <Field
                             id='empresa'
                             type="text"
-                            className="block w-full p-3 mt-2 bg-gray-50"
+                            className="block w-full p-3 mt-2 bg-slate-50"
                             placeholder="Empresa del cliente"
                             name="empresa"
                         />
@@ -116,7 +112,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                     </div>
                     <div className="mb-4">
                         <label
-                            className="text-gray-600"
+                            className="text-slate-600"
                             htmlFor='email'
                         >
                             Email:
@@ -124,7 +120,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                         <Field
                             id='email'
                             type="email"
-                            className="block w-full p-3 mt-2 bg-gray-50"
+                            className="block w-full p-3 mt-2 bg-slate-50"
                             placeholder="Email del cliente"
                             name="email"
                         />
@@ -135,7 +131,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                     </div>
                     <div className="mb-4">
                         <label
-                            className="text-gray-600"
+                            className="text-slate-600"
                             htmlFor='telefono'
                         >
                             Teléfono:
@@ -143,7 +139,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                         <Field
                             id='telefono'
                             type="tel"
-                            className="block w-full p-3 mt-2 bg-gray-50"
+                            className="block w-full p-3 mt-2 bg-slate-50"
                             placeholder="Teléfono del cliente"
                             name="telefono"
                         />
@@ -154,7 +150,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                     </div>
                     <div className="mb-4">
                         <label
-                            className="text-gray-600"
+                            className="text-slate-600"
                             htmlFor='notas'
                         >
                             Notas:
@@ -163,7 +159,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                             as='textarea'
                             id='notas'
                             type="text"
-                            className="block w-full h-40 p-3 mt-2 bg-gray-50"
+                            className="block w-full h-40 p-3 mt-2 bg-slate-50"
                             placeholder="Notas"
                             name="notas"
                         />
@@ -172,7 +168,7 @@ export default function Formulario({titulo, textoBoton, cliente={}}) {
                     <input
                         type="submit"
                         value={textoBoton}
-                        className="w-full px-4 py-2 text-lg font-bold text-white bg-blue-800 rounded-md shadow-md hover:bg-blue-900 hover:shadow-none"
+                        className="w-full px-4 py-2 text-lg font-bold text-white rounded-md shadow-md bg-slate-600 hover:bg-slate-800 hover:shadow-none"
                     />
                 </Form>
                 )}
