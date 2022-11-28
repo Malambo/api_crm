@@ -19,8 +19,6 @@ export default function EditarCliente() {
             } catch (error) {
                 console.log(error)
             }
-            
-            setCargando(!cargando)
         }
 
         obtenerClienteAPI()
@@ -38,7 +36,7 @@ export default function EditarCliente() {
         </p>
 
         <Formulario
-            titulo={`Editar el cliente Nº ${id}`}
+            titulo={`Editar el cliente ${id}`}
             textoBoton={'Guardar cambios'}
             cliente={cliente}
         />
